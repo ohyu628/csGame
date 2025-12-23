@@ -1,0 +1,42 @@
+[
+{
+  "model": "questions.category",
+  "pk": 1,
+  "fields": {
+    "name": "네트워크",
+    "description": "네트워크 카테고리"
+  }
+},
+{
+  "model": "questions.category",
+  "pk": 2,
+  "fields": {
+    "name": "OS",
+    "description": "OS 카테고리"
+  }
+},
+{
+  "model": "questions.category",
+  "pk": 3,
+  "fields": {
+    "name": "DB",
+    "description": "DB 카테고리"
+  }
+},
+{
+  "model": "questions.category",
+  "pk": 4,
+  "fields": {
+    "name": "자료구조",
+    "description": "자료구조 카테고리"
+  }
+},
+{
+  "model": "questions.category",
+  "pk": 5,
+  "fields": {
+    "name": "알고리즘",
+    "description": "알고리즘 카테고리"
+  }
+}
+]

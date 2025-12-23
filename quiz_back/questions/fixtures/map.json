@@ -1,0 +1,77 @@
+[
+  {
+    "model": "game.map",
+    "pk": 1,
+    "fields": {
+      "name": "네트워크",
+      "description": "네트워크 게임맵 입니다.",
+      "created_at": "2025-12-01T10:00:00Z",
+      "updated_at": "2025-12-01T10:00:00Z",
+      "problem_sets": []
+    }
+  },
+  {
+    "model": "game.map",
+    "pk": 2,
+    "fields": {
+      "name": "OS",
+      "description": "OS 게임맵 입니다.",
+      "created_at": "2025-12-01T11:00:00Z",
+      "updated_at": "2025-12-01T11:00:00Z",
+      "problem_sets": []
+    }
+  },
+  {
+    "model": "game.map",
+    "pk": 3,
+    "fields": {
+      "name": "DB",
+      "description": "DB 게임맵 입니다.",
+      "created_at": "2025-12-01T12:00:00Z",
+      "updated_at": "2025-12-01T12:00:00Z",
+      "problem_sets": []
+    }
+  },
+  {
+    "model": "game.map",
+    "pk": 4,
+    "fields": {
+      "name": "자료구조",
+      "description": "자료구조 게임맵 입니다.",
+      "created_at": "2025-12-01T13:00:00Z",
+      "updated_at": "2025-12-01T13:00:00Z",
+      "problem_sets": []
+    }
+  },
+  {
+    "model": "game.map",
+    "pk": 5,
+    "fields": {
+      "name": "알고리즘",
+      "description": "알고리즘 게임맵 입니다.",
+      "created_at": "2025-12-01T14:00:00Z",
+      "updated_at": "2025-12-01T14:00:00Z",
+      "problem_sets": []
+    }
+  },
+
+  { "model": "game.map_problem_sets", "pk": 1, "fields": { "map": 1, "problemset": 1 } },
+  { "model": "game.map_problem_sets", "pk": 2, "fields": { "map": 1, "problemset": 2 } },
+  { "model": "game.map_problem_sets", "pk": 3, "fields": { "map": 1, "problemset": 3 } },
+
+  { "model": "game.map_problem_sets", "pk": 4, "fields": { "map": 2, "problemset": 4 } },
+  { "model": "game.map_problem_sets", "pk": 5, "fields": { "map": 2, "problemset": 5 } },
+  { "model": "game.map_problem_sets", "pk": 6, "fields": { "map": 2, "problemset": 6 } },
+
+  { "model": "game.map_problem_sets", "pk": 7, "fields": { "map": 3, "problemset": 7 } },
+  { "model": "game.map_problem_sets", "pk": 8, "fields": { "map": 3, "problemset": 8 } },
+  { "model": "game.map_problem_sets", "pk": 9, "fields": { "map": 3, "problemset": 9 } },
+
+  { "model": "game.map_problem_sets", "pk": 10, "fields": { "map": 4, "problemset": 10 } },
+  { "model": "game.map_problem_sets", "pk": 11, "fields": { "map": 4, "problemset": 11 } },
+  { "model": "game.map_problem_sets", "pk": 12, "fields": { "map": 4, "problemset": 12 } },
+
+  { "model": "game.map_problem_sets", "pk": 13, "fields": { "map": 5, "problemset": 13 } },
+  { "model": "game.map_problem_sets", "pk": 14, "fields": { "map": 5, "problemset": 14 } },
+  { "model": "game.map_problem_sets", "pk": 15, "fields": { "map": 5, "problemset": 15 } }
+]

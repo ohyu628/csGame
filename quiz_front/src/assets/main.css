@@ -1,0 +1,153 @@
+/* 1) Tailwind v4는 이 한 줄로 시작 */
+@import "tailwindcss"; /* v4 방식 */
+
+
+
+/* 2) (선택) Tailwind v4의 CSS-first 테마 변수로 기본 폰트 지정
+   - 이렇게 해두면 `font-sans` 유틸도 자동으로 이 폰트를 사용하게 됨 */
+@theme {
+  --font-sans: "Galmuri14", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR",
+    sans-serif;
+} /* v4의 @theme 흐름 */
+
+
+
+/* 3) 폰트 로드 (경로는 main.css 기준 상대경로 유지) */
+@font-face {
+  font-family: "Galmuri14";
+  src: url("./fonts/Galmuri11.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Galmuri14";
+  src: url("./fonts/Galmuri11-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+/* 4) 전역 적용 (Tailwind preflight보다 “뒤”에 있으니 덮어씌워짐) */
+@layer base {
+  html,
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+
+@layer components {
+	.pixel-panel {
+    /* 테두리 두께 = slice 값이랑 보통 동일하게 맞춤 */
+    border: 9px solid transparent;
+
+    /* ✅ 핵심: 9-slice */
+    border-image-source: url("./ui/modal_panel.png");
+    border-image-slice: 30 fill;   /* 12 = 코너/테두리 두께(픽셀). 네 PNG에 맞게 조정 */
+    border-image-width: 4;
+    border-image-repeat: round;  /* repeat도 가능: repeat / round */
+		box-sizing: border-box;
+    /* 중앙 배경색(이미지에 중앙이 투명일 때) */
+    /* background: rgba(255, 255, 255, 1); */
+
+    /* 픽셀 느낌(브라우저가 보간하지 않게) */
+    image-rendering: pixelated;
+  }
+
+  /* ✅ 패널 안쪽 여백은 border 때문에 p-4 대신 별도 */
+  .pixel-panel__content {
+    padding: 16px; /* 원하는 만큼 */
+    min-width: 0;
+		overflow: hidden;
+  }
+	.nav-panel {
+    /* 테두리 두께 = slice 값이랑 보통 동일하게 맞춤 */
+    border: 9px solid transparent;
+
+    /* ✅ 핵심: 9-slice */
+    border-image-source: url("./ui/nav_panel.png");
+    border-image-slice: 30 fill;   /* 12 = 코너/테두리 두께(픽셀). 네 PNG에 맞게 조정 */
+    border-image-width: 4;
+    border-image-repeat: round;  /* repeat도 가능: repeat / round */
+
+    /* 중앙 배경색(이미지에 중앙이 투명일 때) */
+    /* background: rgba(255, 255, 255, 1); */
+
+    /* 픽셀 느낌(브라우저가 보간하지 않게) */
+    image-rendering: pixelated;
+  }
+	.quiz-panel {
+    /* 테두리 두께 = slice 값이랑 보통 동일하게 맞춤 */
+    border: 9px solid transparent;
+
+    /* ✅ 핵심: 9-slice */
+    border-image-source: url("./ui/quiz_panel.png");
+    border-image-slice: 30 fill;   /* 12 = 코너/테두리 두께(픽셀). 네 PNG에 맞게 조정 */
+    border-image-width: 32px;
+    border-image-repeat: stretch;  /* repeat도 가능: repeat / round */
+
+    /* 중앙 배경색(이미지에 중앙이 투명일 때) */
+    /* background: rgba(255, 228, 208, 1); */
+
+    /* 픽셀 느낌(브라우저가 보간하지 않게) */
+    image-rendering: pixelated;
+  }
+
+
+  .input {
+  @apply block w-full rounded-md bg-white
+          px-3 py-1.5
+          text-base text-gray-900
+          outline outline-1 -outline-offset-1 outline-gray-300
+          placeholder:text-gray-400
+          focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600
+          sm:text-sm/6;
+}
+  .btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded-lg;
+  @apply hover:bg-blue-600 active:bg-blue-700;
+  @apply transition duration-300 ease-in-out;
+  }
+}
+
+@layer utilities {
+  @keyframes fade-blink {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1.00);
+    }
+    50% {
+      opacity: 0.05;
+      transform: scale(1.05);
+    }
+  }
+
+  .animate-fade-blink {
+    animation: fade-blink 2s ease-in-out infinite;
+  }
+}
+
+.modal-enter-from,
+.modal-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+  transition: opacity 0.3s ease-out;
+}
+
+.modal-enter-from > *,
+.modal-leave-to > * {
+  transform: scale(0.95);
+}
+
+.modal-enter-to > *,
+.modal-leave-from > * {
+  transform: scale(1);
+}

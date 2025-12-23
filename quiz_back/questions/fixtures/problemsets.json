@@ -1,0 +1,201 @@
+[
+  {
+    "model": "game.problemset",
+    "pk": 1,
+    "fields": {
+      "title": "네트워크[EASY]",
+      "description": "EASY 난이도의 네트워크 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 2,
+    "fields": {
+      "title": "네트워크[MEDIUM]",
+      "description": "MEDIUM 난이도의 네트워크 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 3,
+    "fields": {
+      "title": "네트워크[HARD]",
+      "description": "HARD 난이도의 네트워크 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+
+  {
+    "model": "game.problemset",
+    "pk": 4,
+    "fields": {
+      "title": "OS[EASY]",
+      "description": "EASY 난이도의 OS 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 5,
+    "fields": {
+      "title": "OS[MEDIUM]",
+      "description": "MEDIUM 난이도의 OS 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 6,
+    "fields": {
+      "title": "OS[HARD]",
+      "description": "HARD 난이도의 OS 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+
+  {
+    "model": "game.problemset",
+    "pk": 7,
+    "fields": {
+      "title": "DB[EASY]",
+      "description": "EASY 난이도의 DB 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 8,
+    "fields": {
+      "title": "DB[MEDIUM]",
+      "description": "MEDIUM 난이도의 DB 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 9,
+    "fields": {
+      "title": "DB[HARD]",
+      "description": "HARD 난이도의 DB 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+
+  {
+    "model": "game.problemset",
+    "pk": 10,
+    "fields": {
+      "title": "자료구조[EASY]",
+      "description": "EASY 난이도의 자료구조 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 11,
+    "fields": {
+      "title": "자료구조[MEDIUM]",
+      "description": "MEDIUM 난이도의 자료구조 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 12,
+    "fields": {
+      "title": "자료구조[HARD]",
+      "description": "HARD 난이도의 자료구조 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+
+  {
+    "model": "game.problemset",
+    "pk": 13,
+    "fields": {
+      "title": "알고리즘[EASY]",
+      "description": "EASY 난이도의 알고리즘 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 14,
+    "fields": {
+      "title": "알고리즘[MEDIUM]",
+      "description": "MEDIUM 난이도의 알고리즘 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  },
+  {
+    "model": "game.problemset",
+    "pk": 15,
+    "fields": {
+      "title": "알고리즘[HARD]",
+      "description": "HARD 난이도의 알고리즘 문제입니다.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z",
+      "created_by": null,
+      "created_by_admin": true,
+      "like_users": []
+    }
+  }
+]
